@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": "prod_1",
+      "name": "Wireless Headphones",
+      "price": 99.99,
+      "category": "Electronics",
+      "on_hand": 50,
+      "description": "High-quality wireless headphones with noise cancellation"
+    },
+    {
+      "id": "prod_2",
+      "name": "Coffee Mug",
+      "price": 12.99,
+      "category": "Home & Kitchen",
+      "on_hand": 100,
+      "description": "Ceramic coffee mug with ergonomic handle"
+    },
+    {
+      "id": "prod_3",
+      "name": "Laptop Stand",
+      "price": 45.00,
+      "category": "Office Supplies",
+      "on_hand": 25,
+      "description": "Adjustable aluminum laptop stand for better ergonomics"
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Admin",
+      "last": "User",
+      "street_address": "123 Admin St",
+      "role": "admin"
+    },
+    {
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "John",
+      "last": "Doe",
+      "street_address": "456 User Ave",
+      "role": "user"
+    }
+  ],
+  "orders": []
+}
