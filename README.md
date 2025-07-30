@@ -1,4 +1,5 @@
-# RESTful Node.js/Express API Server
+# Online store server
+Vibe-coded for ADP.
 
 A complete RESTful API server built with Node.js and Express, featuring authentication, role-based access control, and a flat file JSON database.
 
