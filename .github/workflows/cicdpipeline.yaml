@@ -10,7 +10,7 @@ jobs:
       - run: echo "Starting CI/CD workflow. status ${{ job.status }}"
 
       - name: Check out repo code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
           fetch-tags: true
