@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DB_PATH = path.join(__dirname, '..', 'database.json');
-const mongoUrl = `mongodb://admin:pw_1234@myserver.db.com:27017/`
+const mongoUrl = `mongodb://admin:pw_12345@myserver.db.com:27017/`
 
 // Initialize database with default structure
 function initializeDatabase() {
