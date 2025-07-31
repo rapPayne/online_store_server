@@ -21,25 +21,12 @@ jobs:
           path: ./
           # outputFile: trufflehog-results.json
 
-          # - name: Install TruffleHog
-      #   run: |
-      #     pip install trufflehog
-
-      # - name: Run TruffleHog
-      #   run: |
-      #     trufflehog git file://. \
-      #       # --fail \
-      #       # --only-verified \
-      #       --branch main \
-      #       --json \
-      #       > trufflehog-results.json || echo "Secrets detected!"
-
-      - name: Upload TruffleHog Results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: trufflehog-results
-          path: trufflehog-results.json
+      - name: Exit on secrets detected
+        if: failure()
+        run: |
+          echo "Saw a secret" 
+          echo "Saw a super secret" >2
+          exit 1
 
       - name: Install dependencies
         run: npm ci
