@@ -33,7 +33,6 @@ jobs:
           projectBaseDir: .
         env:
           SONAR_TOKEN: ${{ secrets.SONARQUBE_API_KEY }}
-          SONAR_SCANNER_OPTS: -X
 
       - name: Install dependencies
         run: npm ci
