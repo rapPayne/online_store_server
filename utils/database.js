@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DB_PATH = path.join(__dirname, '..', 'database.json');
+const mongoUrl = `mongodb://admin:pw_1234@myserver.db.com:27017/`
 
 // Initialize database with default structure
 function initializeDatabase() {
@@ -62,7 +63,7 @@ function addToCollection(collectionName, item) {
 function updateInCollection(collectionName, predicate, updateData) {
   const collection = getCollection(collectionName);
   const index = collection.findIndex(predicate);
-  
+
   if (index !== -1) {
     collection[index] = { ...collection[index], ...updateData };
     return updateCollection(collectionName, collection) ? collection[index] : null;
@@ -74,7 +75,7 @@ function updateInCollection(collectionName, predicate, updateData) {
 function removeFromCollection(collectionName, predicate) {
   const collection = getCollection(collectionName);
   const index = collection.findIndex(predicate);
-  
+
   if (index !== -1) {
     const removed = collection.splice(index, 1);
     updateCollection(collectionName, collection);
