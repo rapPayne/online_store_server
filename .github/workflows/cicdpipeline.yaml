@@ -12,18 +12,23 @@ jobs:
       - name: Check out repo code
         uses: actions/checkout@v4
       
-      - name: Install TruffleHog
-        run: |
-          pip install trufflehog
+      - name: Run TruffleHog OSS
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
 
-      - name: Run TruffleHog
-        run: |
-          trufflehog git file://. \
-            # --fail \
-            # --only-verified \
-            --branch main \
-            --json \
-            > trufflehog-results.json || echo "Secrets detected!"
+          # - name: Install TruffleHog
+      #   run: |
+      #     pip install trufflehog
+
+      # - name: Run TruffleHog
+      #   run: |
+      #     trufflehog git file://. \
+      #       # --fail \
+      #       # --only-verified \
+      #       --branch main \
+      #       --json \
+      #       > trufflehog-results.json || echo "Secrets detected!"
 
       - name: Upload TruffleHog Results
         if: always()
