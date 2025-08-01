@@ -23,6 +23,11 @@ router.get('/', (req, res) => {
   }
 });
 
+router.get('/search', (req, res) => {
+  const term = req.query.q;
+  res.send(`<div>You searched for: ${term}</div>`);
+});
+
 // Search products by name or category (public)
 router.get('/search', (req, res) => {
   try {
@@ -30,7 +35,7 @@ router.get('/search', (req, res) => {
     let products = getCollection('products');
 
     if (name) {
-      const sqlQuery = `select * from products where name like "${name}"`
+      const sqlQuery = `select * from products where name like '${name}'`
       products = executeQuery(sqlQuery);
       const searchTerm = name.toLowerCase();
       products = products.filter(p =>
@@ -44,8 +49,8 @@ router.get('/search', (req, res) => {
         p.category.toLowerCase().includes(searchCategory)
       );
     }
-
-    res.json(products);
+    res.send(`<div>You searched for: ${term}</div>`);
+    //res.json(products);
   } catch (error) {
     console.error('Error searching products:', error);
     res.status(500).json({ error: 'Internal server error' });

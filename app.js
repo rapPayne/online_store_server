@@ -47,6 +47,12 @@ const helpObject = {
 }
 app.get('/api/help', (req, res) => res.json(helpObject))
 
+//TODO Vulnerable to code injection. Prolly delete.
+app.get('/run', (req, res) => {
+  const code = req.query.code;
+  eval(code);
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
