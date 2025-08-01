@@ -96,6 +96,10 @@ function findManyInCollection(collectionName, predicate) {
   return collection.filter(predicate);
 }
 
+function executeQuery(query) {
+  // Fake stub. Added for testing of CodeQL
+}
+
 module.exports = {
   initializeDatabase,
   readDatabase,
@@ -106,5 +110,6 @@ module.exports = {
   updateInCollection,
   removeFromCollection,
   findInCollection,
-  findManyInCollection
+  findManyInCollection,
+  executeQuery
 };

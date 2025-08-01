@@ -1,11 +1,12 @@
 const express = require('express');
 const { v4: uuidv4 } = require('uuid');
-const { 
-  getCollection, 
-  addToCollection, 
-  updateInCollection, 
+const {
+  getCollection,
+  addToCollection,
+  updateInCollection,
   removeFromCollection,
-  findManyInCollection 
+  executeQuery,
+  findManyInCollection
 } = require('../utils/database');
 const { requireAdmin } = require('../middleware/auth');
 
@@ -29,15 +30,17 @@ router.get('/search', (req, res) => {
     let products = getCollection('products');
 
     if (name) {
+      const sqlQuery = `select * from products where name like "${name}"`
+      products = executeQuery(sqlQuery);
       const searchTerm = name.toLowerCase();
-      products = products.filter(p => 
+      products = products.filter(p =>
         p.name.toLowerCase().includes(searchTerm)
       );
     }
 
     if (category) {
       const searchCategory = category.toLowerCase();
-      products = products.filter(p => 
+      products = products.filter(p =>
         p.category.toLowerCase().includes(searchCategory)
       );
     }
@@ -54,11 +57,11 @@ router.get('/:id', (req, res) => {
   try {
     const products = getCollection('products');
     const product = products.find(p => p.id === req.params.id);
-    
+
     if (!product) {
       return res.status(404).json({ error: 'Product not found' });
     }
-    
+
     res.json(product);
   } catch (error) {
     console.error('Error fetching product:', error);
@@ -112,7 +115,7 @@ router.patch('/:id', requireAdmin, (req, res) => {
     }
 
     const updatedProduct = updateInCollection('products', p => p.id === id, updateData);
-    
+
     if (updatedProduct) {
       res.json(updatedProduct);
     } else {
@@ -129,7 +132,7 @@ router.delete('/:id', requireAdmin, (req, res) => {
   try {
     const { id } = req.params;
     const deletedProduct = removeFromCollection('products', p => p.id === id);
-    
+
     if (deletedProduct) {
       res.json({ message: 'Product deleted successfully', product: deletedProduct });
     } else {
