@@ -15,27 +15,30 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
       
-      # - name: Run TruffleHog OSS
-      #   uses: trufflesecurity/trufflehog@main
-      #   with:
-      #     path: ./
-      #     # outputFile: trufflehog-results.json
-
-      # - name: Exit on secrets detected
-      #   if: failure()
-      #   run: |
-      #     echo "Saw a secret" 
-      #     exit 1
-
-      - run: echo "X${{ secrets.SONARQUBE_API_KEY }}X"
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v4 # Ex: v4.1.0, See the latest version at https://github.com/marketplace/actions/official-sonarqube-scan
+      - name: Run TruffleHog OSS
+        uses: trufflesecurity/trufflehog@main
         with:
-          projectBaseDir: .
-        env:
-          SONAR_TOKEN: ${{ secrets.SONARQUBE_API_KEY }}
+          path: ./
+          # outputFile: trufflehog-results.json
+
+      - name: Exit on secrets detected
+        if: failure()
+        run: |
+          echo "Saw a secret" 
+          exit 1
+
+      # - name: SonarQube Scan
+      #   uses: SonarSource/sonarqube-scan-action@v4 # Ex: v4.1.0, See the latest version at https://github.com/marketplace/actions/official-sonarqube-scan
+      #   with:
+      #     projectBaseDir: .
+      #   env:
+      #     SONAR_TOKEN: ${{ secrets.SONARQUBE_API_KEY }}
 
       - name: Install dependencies
         run: npm ci
       
+      # - name: Deploy to Render
+      #   run: |
+      #     curl -X POST "https://api.render.com/deploy/srv-d253l48gjchc73b337q0?key=PnZxHdMEwyI"
+
       - run: echo "Pipeline run successfully. Have a great day! status ${{ job.status }}"

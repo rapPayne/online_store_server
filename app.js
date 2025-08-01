@@ -41,6 +41,12 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is running' });
 });
 
+const helpObject = {
+  contact_info: "862-555-1212",
+  message: "Go to somewhere to get instructions"
+}
+app.get('/api/help', (req, res) => res.json(helpObject))
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
