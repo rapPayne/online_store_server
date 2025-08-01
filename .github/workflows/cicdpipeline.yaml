@@ -3,6 +3,9 @@ name: CI/CD Pipeline Workflow
 on:
   push
 
+permissions:
+  security-events: write
+
 jobs:
   Scan-and-Deploy:
     runs-on: ubuntu-latest
@@ -19,13 +22,13 @@ jobs:
         uses: github/codeql-action/init@v3
         with:
           languages: javascript
-      - run: echo "cp1"
+
       - name: Autobuild
         uses: github/codeql-action/autobuild@v3
-      - run: echo "cp2"
+
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
-      - run: echo "cp3"
+
       - name: Run TruffleHog OSS
         uses: trufflesecurity/trufflehog@main
         with:
