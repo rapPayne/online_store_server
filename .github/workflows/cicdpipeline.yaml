@@ -39,6 +39,6 @@ jobs:
       
       - name: Deploy to Render
         run: |
-          curl -X POST "https://api.render.com/deploy/srv-d253l48gjchc73b337q0?key=PnZxHdMEwyI"
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
 
       - run: echo "Pipeline run successfully. Have a great day! status ${{ job.status }}"
