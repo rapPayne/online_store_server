@@ -5,10 +5,16 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "node app.js",
+    "dev": "node --watch app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["node", "express", "api", "rest", "authentication"],
+  "keywords": [
+    "node",
+    "express",
+    "api",
+    "rest",
+    "authentication"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -17,5 +23,8 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5"
   }
 }

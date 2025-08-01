@@ -15,6 +15,17 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
       
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+      - run: echo "cp1"
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+      - run: echo "cp2"
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+      - run: echo "cp3"
       - name: Run TruffleHog OSS
         uses: trufflesecurity/trufflehog@main
         with:
