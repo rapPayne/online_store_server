@@ -45,13 +45,7 @@ const helpObject = {
   contact_info: "862-555-1212",
   message: "Go to somewhere to get instructions"
 }
-app.get('/api/help', (req, res) => res.json(helpObject))
-
-//TODO Vulnerable to code injection. Prolly delete.
-app.get('/run', (req, res) => {
-  const code = req.query.code;
-  eval(code);
-});
+app.get(/\/api\/help/, (req, res) => res.json(helpObject))
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -59,10 +53,12 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
-// 404 handler
-app.use((req, res) => {
-  res.status(404).json({ error: 'Route not found' });
-});
+// // 404 handler
+// app.use((req, res) => {
+//   res.status(404).json({ error: 'Route not found' });
+// });
+
+app.use('/assets', express.static('./assets'))
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

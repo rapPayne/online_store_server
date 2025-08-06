@@ -1,32 +1,36 @@
 {
   "products": [
     {
-      "id": "prod_1",
-      "name": "Wireless Headphones",
-      "price": 99.99,
+      "id": 1,
+      "name": "Melomania P100 Over‑Ear Headphones",
+      "price": 279.00,
       "category": "Electronics",
-      "on_hand": 50,
-      "description": "High-quality wireless headphones with noise cancellation"
+      "on_hand": 45,
+      "description": "Cambridge Audio Melomania P100 wireless over‑ear headphones with 100‑hour battery life, ANC, and aptX Lossless.",
+      "imageUrl": "/assets/images/headphones1.jpg"
     },
     {
-      "id": "prod_2",
-      "name": "Coffee Mug",
-      "price": 12.99,
+      "id": 2,
+      "name": "Classic White Ceramic Coffee Mug",
+      "price": 9.95,
       "category": "Home & Kitchen",
-      "on_hand": 100,
-      "description": "Ceramic coffee mug with ergonomic handle"
+      "on_hand": 200,
+      "description": "11 oz plain white ceramic mug, dishwasher- and microwave-safe, ideal for everyday use.",
+      "imageUrl": "/assets/images/coffemug1.jpg"
     },
     {
-      "id": "prod_3",
-      "name": "Laptop Stand",
-      "price": 45.00,
-      "category": "Office Supplies",
-      "on_hand": 25,
-      "description": "Adjustable aluminum laptop stand for better ergonomics"
+      "id": 3,
+      "name": "Over‑Ear Bluetooth Headphones Black",
+      "price": 49.99,
+      "category": "Electronics",
+      "on_hand": 75,
+      "description": "Budget-friendly over‑ear Bluetooth headphones with decent sound quality and foldable design.",
+      "imageUrl": "https://images.openai.com/thumbnails/url/99hKKXicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw5KLMpMNkwpzXIvSPKxLHd0NXGyyM5ItAwJKg01SEsqK_bKzwsyqzLNSDTKDTL28zGMSAq2SPIPMSxVKwYAzmUpAQ"
     }
   ],
   "users": [
     {
+      "id": 1,
       "username": "admin",
       "email": "admin@example.com",
       "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
@@ -36,6 +40,7 @@
       "role": "admin"
     },
     {
+      "id": 2,
       "username": "john_doe",
       "email": "john@example.com",
       "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
