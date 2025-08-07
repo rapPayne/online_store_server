@@ -1,6 +1,9 @@
 # Static assets like pictures
 assets/
 
+# environment file
+.env
+
 # Logs
 logs
 *.log

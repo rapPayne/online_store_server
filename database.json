@@ -2,30 +2,228 @@
   "products": [
     {
       "id": 1,
-      "name": "Melomania P100 Over‑Ear Headphones",
-      "price": 279.00,
-      "category": "Electronics",
-      "on_hand": 45,
-      "description": "Cambridge Audio Melomania P100 wireless over‑ear headphones with 100‑hour battery life, ANC, and aptX Lossless.",
-      "imageUrl": "/assets/images/headphones1.jpg"
+      "name": "Whey Protein Isolate - Vanilla",
+      "price": 49.99,
+      "category": "supplements",
+      "on_hand": 120,
+      "description": "High-quality whey protein isolate with 25g protein per serving and no added sugar.",
+      "imageUrl": "/assets/images/whey-vanilla.webp"
     },
     {
       "id": 2,
-      "name": "Classic White Ceramic Coffee Mug",
-      "price": 9.95,
-      "category": "Home & Kitchen",
-      "on_hand": 200,
-      "description": "11 oz plain white ceramic mug, dishwasher- and microwave-safe, ideal for everyday use.",
-      "imageUrl": "/assets/images/coffemug1.jpg"
+      "name": "Adjustable Dumbbell Set (5–52.5 lbs)",
+      "price": 299.99,
+      "category": "equipment",
+      "on_hand": 35,
+      "description": "Space-saving adjustable dumbbells ideal for full-body strength training.",
+      "imageUrl": "/assets/images/dumbbells.jpg"
     },
     {
       "id": 3,
-      "name": "Over‑Ear Bluetooth Headphones Black",
-      "price": 49.99,
-      "category": "Electronics",
+      "name": "Men's Dry-Fit Workout Shirt - Black",
+      "price": 19.99,
+      "category": "men's clothing",
+      "on_hand": 85,
+      "description": "Moisture-wicking short sleeve shirt for high-intensity workouts and casual wear.",
+      "imageUrl": "/assets/images/mens-shirt-black.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Women's High-Waist Leggings - Navy",
+      "price": 29.99,
+      "category": "women's clothing",
+      "on_hand": 120,
+      "description": "Squat-proof, high-stretch leggings for yoga, running, or daily wear.",
+      "imageUrl": "/assets/images/womens-leggings-navy.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Unisex Zip-Up Hoodie - Heather Gray",
+      "price": 39.95,
+      "category": "unisex clothing",
+      "on_hand": 60,
+      "description": "Cozy zip-up hoodie with a relaxed fit and breathable fleece lining.",
+      "imageUrl": "/assets/images/unisex-hoodie-gray.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Creatine Monohydrate Powder",
+      "price": 24.95,
+      "category": "supplements",
+      "on_hand": 140,
+      "description": "Pure creatine monohydrate for increased strength and muscle gains.",
+      "imageUrl": "/assets/images/creatine.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Kettlebell - 20 lbs",
+      "price": 44.99,
+      "category": "equipment",
+      "on_hand": 40,
+      "description": "Powder-coated 20 lb kettlebell with ergonomic handle for versatile training.",
+      "imageUrl": "/assets/images/kettlebell-20lb.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Men's Running Shorts - Charcoal",
+      "price": 24.50,
+      "category": "men's clothing",
+      "on_hand": 95,
+      "description": "Lightweight, quick-dry running shorts with mesh lining and pockets.",
+      "imageUrl": "/assets/images/mens-shorts-charcoal.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Women's Racerback Tank - Coral",
+      "price": 18.75,
+      "category": "women's clothing",
+      "on_hand": 70,
+      "description": "Breathable racerback tank made from soft bamboo-blend fabric.",
+      "imageUrl": "/assets/images/womens-tank-coral.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Unisex Compression Socks (2-Pack)",
+      "price": 22.00,
+      "category": "unisex clothing",
+      "on_hand": 100,
+      "description": "Graduated compression socks for improved circulation and recovery.",
+      "imageUrl": "/assets/images/compression-socks.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Pre-Workout Powder - Fruit Punch",
+      "price": 32.99,
+      "category": "supplements",
+      "on_hand": 110,
+      "description": "Energy-boosting pre-workout formula with beta-alanine and caffeine.",
+      "imageUrl": "/assets/images/preworkout-fruit.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Foam Roller - 18 inch",
+      "price": 21.95,
+      "category": "equipment",
+      "on_hand": 80,
+      "description": "High-density foam roller for muscle recovery and trigger point relief.",
+      "imageUrl": "/assets/images/foam-roller.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Men's Compression Tights - Black",
+      "price": 27.99,
+      "category": "men's clothing",
+      "on_hand": 65,
+      "description": "Supportive and flexible compression tights ideal for running and lifting.",
+      "imageUrl": "/assets/images/mens-tights-black.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Women's Sports Bra - Teal",
+      "price": 26.50,
+      "category": "women's clothing",
+      "on_hand": 95,
+      "description": "Medium-support sports bra with removable pads and moisture-wicking fabric.",
+      "imageUrl": "/assets/images/sports-bra-teal.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Unisex Lightweight Windbreaker",
+      "price": 48.00,
+      "category": "unisex clothing",
+      "on_hand": 55,
+      "description": "Wind- and water-resistant jacket perfect for outdoor training.",
+      "imageUrl": "/assets/images/windbreaker.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Omega-3 Fish Oil Softgels",
+      "price": 19.99,
+      "category": "supplements",
+      "on_hand": 130,
+      "description": "Molecularly distilled omega-3 fish oil to support heart and joint health.",
+      "imageUrl": "/assets/images/fish-oil.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Resistance Bands Set (5-Pack)",
+      "price": 17.95,
+      "category": "equipment",
+      "on_hand": 200,
+      "description": "Color-coded resistance bands for strength training, rehab, or stretching.",
+      "imageUrl": "/assets/images/resistance-bands.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Men's Gym Tank Top - Olive",
+      "price": 16.99,
+      "category": "men's clothing",
+      "on_hand": 90,
+      "description": "Classic muscle tank with raw edges and ultra-soft cotton.",
+      "imageUrl": "/assets/images/mens-tank-olive.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Women's Joggers - Slate Gray",
+      "price": 34.95,
+      "category": "women's clothing",
+      "on_hand": 80,
+      "description": "Slim-fit joggers with a tapered leg and drawstring waist.",
+      "imageUrl": "/assets/images/womens-joggers.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Unisex Training Beanie",
+      "price": 14.00,
+      "category": "unisex clothing",
+      "on_hand": 150,
+      "description": "Moisture-wicking performance beanie for cold-weather workouts.",
+      "imageUrl": "/assets/images/training-beanie.jpg"
+    },
+    {
+      "id": 21,
+      "name": "BCAA Recovery Drink Mix - Lemon Lime",
+      "price": 29.95,
+      "category": "supplements",
+      "on_hand": 115,
+      "description": "Branched-chain amino acids to support muscle recovery and reduce soreness.",
+      "imageUrl": "/assets/images/bcaa-lemonlime.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Pull-Up Assist Band",
+      "price": 15.99,
+      "category": "equipment",
       "on_hand": 75,
-      "description": "Budget-friendly over‑ear Bluetooth headphones with decent sound quality and foldable design.",
-      "imageUrl": "https://images.openai.com/thumbnails/url/99hKKXicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw5KLMpMNkwpzXIvSPKxLHd0NXGyyM5ItAwJKg01SEsqK_bKzwsyqzLNSDTKDTL28zGMSAq2SPIPMSxVKwYAzmUpAQ"
+      "description": "Durable loop band ideal for assisted pull-ups and mobility exercises.",
+      "imageUrl": "/assets/images/pullup-band.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Men's Sleeveless Hoodie - Gray",
+      "price": 35.00,
+      "category": "men's clothing",
+      "on_hand": 70,
+      "description": "Cotton-blend sleeveless hoodie with kangaroo pocket and dropped armholes.",
+      "imageUrl": "/assets/images/sleeveless-hoodie.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Women's Training Shorts - Burgundy",
+      "price": 22.99,
+      "category": "women's clothing",
+      "on_hand": 60,
+      "description": "Stretchy, lightweight shorts with built-in liner and high waistband.",
+      "imageUrl": "/assets/images/womens-shorts-burgundy.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Unisex Oversized Gym Tote",
+      "price": 42.00,
+      "category": "unisex clothing",
+      "on_hand": 45,
+      "description": "Roomy and durable tote with separate shoe compartment and water bottle pocket.",
+      "imageUrl": "/assets/images/gym-tote.jpg"
     }
   ],
   "users": [
@@ -47,6 +245,186 @@
       "first": "John",
       "last": "Doe",
       "street_address": "456 User Ave",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "ashley_nguyen",
+      "email": "ashley.nguyen@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Ashley",
+      "last": "Nguyen",
+      "street_address": "32 Maple Lane",
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "username": "tyler_smith",
+      "email": "tyler.smith@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Tyler",
+      "last": "Smith",
+      "street_address": "88 Eastlake Dr",
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "username": "emily_jones",
+      "email": "emily.jones@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Emily",
+      "last": "Jones",
+      "street_address": "907 Oak Circle",
+      "role": "user"
+    },
+    {
+      "id": 6,
+      "username": "david_kim",
+      "email": "david.kim@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "David",
+      "last": "Kim",
+      "street_address": "17 Skyline Blvd",
+      "role": "user"
+    },
+    {
+      "id": 7,
+      "username": "chloe_martin",
+      "email": "chloe.martin@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Chloe",
+      "last": "Martin",
+      "street_address": "303 Birch Rd",
+      "role": "user"
+    },
+    {
+      "id": 8,
+      "username": "noah_brown",
+      "email": "noah.brown@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Noah",
+      "last": "Brown",
+      "street_address": "12 Rainy St",
+      "role": "user"
+    },
+    {
+      "id": 9,
+      "username": "mia_wilson",
+      "email": "mia.wilson@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Mia",
+      "last": "Wilson",
+      "street_address": "23 Lavender Hill",
+      "role": "user"
+    },
+    {
+      "id": 10,
+      "username": "logan_diaz",
+      "email": "logan.diaz@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Logan",
+      "last": "Diaz",
+      "street_address": "88 Crosswind Ct",
+      "role": "user"
+    },
+    {
+      "id": 11,
+      "username": "ava_chen",
+      "email": "ava.chen@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Ava",
+      "last": "Chen",
+      "street_address": "400 Cherry Tree Ln",
+      "role": "user"
+    },
+    {
+      "id": 12,
+      "username": "mason_evans",
+      "email": "mason.evans@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Mason",
+      "last": "Evans",
+      "street_address": "904 Victory Blvd",
+      "role": "user"
+    },
+    {
+      "id": 13,
+      "username": "zoe_baker",
+      "email": "zoe.baker@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Zoe",
+      "last": "Baker",
+      "street_address": "5 Summit View",
+      "role": "user"
+    },
+    {
+      "id": 14,
+      "username": "lucas_wright",
+      "email": "lucas.wright@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Lucas",
+      "last": "Wright",
+      "street_address": "1196 Crescent St",
+      "role": "user"
+    },
+    {
+      "id": 15,
+      "username": "grace_wood",
+      "email": "grace.wood@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Grace",
+      "last": "Wood",
+      "street_address": "292 Moonlight Ave",
+      "role": "user"
+    },
+    {
+      "id": 16,
+      "username": "ethan_patel",
+      "email": "ethan.patel@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Ethan",
+      "last": "Patel",
+      "street_address": "621 Crystal Lake Dr",
+      "role": "user"
+    },
+    {
+      "id": 17,
+      "username": "lily_reed",
+      "email": "lily.reed@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Lily",
+      "last": "Reed",
+      "street_address": "808 Havenwood Way",
+      "role": "user"
+    },
+    {
+      "id": 18,
+      "username": "jackson_hall",
+      "email": "jackson.hall@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Jackson",
+      "last": "Hall",
+      "street_address": "105 Red Rock Rd",
+      "role": "user"
+    },
+    {
+      "id": 19,
+      "username": "nora_morris",
+      "email": "nora.morris@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Nora",
+      "last": "Morris",
+      "street_address": "47 Blue Sky Ave",
+      "role": "user"
+    },
+    {
+      "id": 20,
+      "username": "aiden_turner",
+      "email": "aiden.turner@example.com",
+      "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+      "first": "Aiden",
+      "last": "Turner",
+      "street_address": "67 Pioneer Ln",
       "role": "user"
     }
   ],
